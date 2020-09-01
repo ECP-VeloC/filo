@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
     free(dst_filelist[i]);
   }
   //MPI_COMM_NULL test
-  rc = Filo_Flush_start("mapfile", NULL, 1, filelist, dest_filelist, MPI_COMM_NULL);
+  rc = Filo_Flush_start("mapfile", NULL, 1, filelist, dest_filelist, MPI_COMM_NULL, "pthread");
   if(rc == FILO_SUCCESS){
     printf ("Error in line %d, file %s, function %s.\n", __LINE__, __FILE__, __func__);
     printf("Filo_Flush_start succeded with MPI_COMM_NULL comm parameters\n");
