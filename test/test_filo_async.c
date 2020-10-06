@@ -107,7 +107,7 @@ int main(int argc, char* argv[])
   rc = Filo_Flush_wait("mapfile", MPI_COMM_NULL);
   if(rc == FILO_SUCCESS){
     printf ("Error in line %d, file %s, function %s.\n", __LINE__, __FILE__, __func__);
-    printf("Filo_Flush_wait succeded with MPI_COMM_NULL comm parameters\n");
+    printf("Filo_Flush_start succeeded with MPI_COMM_NULL comm parameters\n");
     return TEST_FAIL;
   }
  
